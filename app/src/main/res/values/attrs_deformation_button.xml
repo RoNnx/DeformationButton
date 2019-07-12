@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="DeformationButton">
+
+        <attr name="db_radius" format="float"/>
+        <attr name="db_shake_level" format="string"/>
+        <attr name="db_deformation_time" format="integer"/>
+        <attr name="db_shake_time" format="integer"/>
+        <attr name="db_btn_color" format="color"/>
+        <attr name="db_pb_color" format="color"/>
+        <attr name="db_pb_padding" format="float"/>
+        <attr name="db_pb_speed" format="integer"/>
+        <attr name="db_max_time" format="integer"/>
+        <attr name="db_text" format="string"/>
+        <attr name="db_text_color" format="color"/>
+        <attr name="db_text_size" format="integer"/>
+        <attr name="db_text_style" format="string"/>
+        <attr name="db_success_oval_color" format="color"/>
+        <attr name="db_success_yes_color" format="color"/>
+        <attr name="db_success_yes_stroke_width" format="float"/>
+        <attr name="db_success_oval_padding" format="float"/>
+
+    </declare-styleable>
+
+</resources>
