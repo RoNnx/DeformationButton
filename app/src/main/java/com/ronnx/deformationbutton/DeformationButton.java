@@ -25,6 +25,10 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+/**
+ * 酷炫动画按钮
+ * RoNnx
+ */
 public class DeformationButton extends View {
 
     public static final String SLIGHT = "slight";
