@@ -933,7 +933,7 @@ public class DeformationButton extends View {
         mOnStateChangeListener = onStateChangeListener;
     }
 
-    interface OnStateChangeListener {
+    public interface OnStateChangeListener {
         void onStart();
         void onProgress();
         void onFinished();
@@ -943,7 +943,7 @@ public class DeformationButton extends View {
         mOnSuccessListener = onSuccessListener;
     }
 
-    interface OnSuccessListener {
+    public interface OnSuccessListener {
         void onSucceeded();
     }
 
@@ -951,7 +951,7 @@ public class DeformationButton extends View {
         mOnFailureListener = onFailureListener;
     }
 
-    interface OnFailureListener {
+    public interface OnFailureListener {
         void onFailed();
         void onFailureAnimStart();
     }
