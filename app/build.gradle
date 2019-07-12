@@ -1,9 +1,9 @@
-apply plugin: 'com.android.application'
+apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 28
     defaultConfig {
-        applicationId "com.ronnx.deformationbutton"
+        //applicationId "com.ronnx.deformationbutton"
         minSdkVersion 21
         targetSdkVersion 28
         versionCode 1
