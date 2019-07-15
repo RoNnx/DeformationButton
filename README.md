@@ -1,6 +1,6 @@
 # DeformationButton
 
-[![](https://www.jitpack.io/v/RoNnx/DeformationButton.svg)](https://www.jitpack.io/#RoNnx/DeformationButton)![](https://img.shields.io/badge/language-java-red.svg)![](https://img.shields.io/badge/platform-android-green.svg)[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
+[![](https://www.jitpack.io/v/RoNnx/DeformationButton.svg)](https://www.jitpack.io/#RoNnx/DeformationButton)  ![](https://img.shields.io/badge/language-java-red.svg)  ![](https://img.shields.io/badge/platform-android-green.svg)  [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 
 一款有酷炫动画按钮
 
@@ -21,7 +21,7 @@ allprojects {
 }
 ```
 
-**Step 2. **添加依赖
+**Step 2.** 添加依赖
 
 ```groovy
 dependencies {
