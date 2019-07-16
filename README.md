@@ -1,8 +1,14 @@
-# DeformationButton
+# DeformationButton 
 
 [![](https://www.jitpack.io/v/RoNnx/DeformationButton.svg)](https://www.jitpack.io/#RoNnx/DeformationButton)  ![](https://img.shields.io/badge/language-java-red.svg)  ![](https://img.shields.io/badge/platform-android-green.svg)  [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)![](https://img.shields.io/badge/API-21+-orange.svg)
 
-一款有酷炫动画按钮
+一款有酷炫动画按钮（持续更新中！）
+
+* 点击由矩形形变为圆形并有加载动画
+* 成功动画
+* 失败动画
+* 变回矩形的动画
+* ········
 
 ### 说明
 
