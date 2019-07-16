@@ -24,10 +24,10 @@
 
 ```groovy
 allprojects {
-	repositories {
-		...
-		maven { url 'https://www.jitpack.io' }
-	}
+    repositories {
+	    ...
+	    maven { url 'https://www.jitpack.io' }
+    }
 }
 ```
 
@@ -38,3 +38,4 @@ dependencies {
     implementation 'com.github.RoNnx:DeformationButton:1.0.1'
 }
 ```
+
