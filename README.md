@@ -8,6 +8,10 @@
 
 这是我的第一个开源库，虽然功能比较简单，代码写的不够好，可能BUG也很多，但是后续会对这个项目持续进行优化慢慢完善
 
+### 演示效果
+
+![](https://github.com/RoNnx/DeformationButton/blob/master/demonstration.gif?raw=true)
+
 ### 快速使用
 
 **Step 1.** 添加 JitPack 存储库到 Project 的 build.gradle 中
