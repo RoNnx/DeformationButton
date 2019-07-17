@@ -1,4 +1,4 @@
-package com.ronnx.deformationbutton;
+package com.ronnx.deformationbutton.anim;
 
 import android.animation.TypeEvaluator;
 

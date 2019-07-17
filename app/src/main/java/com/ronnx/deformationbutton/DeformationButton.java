@@ -5,7 +5,6 @@ import android.animation.AnimatorSet;
 import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Context;
-import android.content.res.Resources;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -21,13 +20,24 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.LinearInterpolator;
 
+import com.ronnx.deformationbutton.anim.Rect;
+import com.ronnx.deformationbutton.anim.RectEvaluator;
+import com.ronnx.deformationbutton.anim.Shake;
+import com.ronnx.deformationbutton.anim.ShakeEvaluator;
+import com.ronnx.deformationbutton.interfaces.OnFailureListener;
+import com.ronnx.deformationbutton.interfaces.OnStateChangeListener;
+import com.ronnx.deformationbutton.interfaces.OnSuccessListener;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
+import static com.ronnx.deformationbutton.utils.SizeUtils.dp2px;
+import static com.ronnx.deformationbutton.utils.SizeUtils.px2dp;
+
 /**
  * 酷炫动画按钮
- * RoNnx
+ * @author RoNnx
  */
 public class DeformationButton extends View {
 
@@ -308,6 +318,8 @@ public class DeformationButton extends View {
                     deformation(mDeformationTime);
                 }
                 return true;
+            default:
+                break;
         }
         //这句话不要修改
         return super.onTouchEvent(event);
@@ -914,45 +926,20 @@ public class DeformationButton extends View {
     }
 
     public void setTextSize(int dp) {
-        this.mTextSize = (int) dp2px(dp);
+        this.mTextSize = dp2px(dp);
         mTextPaint.setTextSize(dp2px(dp));
         postInvalidate();
-    }
-
-    private float dp2px(final float dpValue) {
-        final float scale = this.getContext().getResources().getDisplayMetrics().density;
-        return dpValue * scale + 0.5f;
-    }
-
-    public static int px2dp(final float pxValue) {
-        final float scale = Resources.getSystem().getDisplayMetrics().density;
-        return (int) (pxValue / scale + 0.5f);
     }
 
     public void setOnStateChangeListener(OnStateChangeListener onStateChangeListener) {
         mOnStateChangeListener = onStateChangeListener;
     }
 
-    public interface OnStateChangeListener {
-        void onStart();
-        void onProgress();
-        void onFinished();
-    }
-
     public void setOnSuccessListener(OnSuccessListener onSuccessListener) {
         mOnSuccessListener = onSuccessListener;
     }
 
-    public interface OnSuccessListener {
-        void onSucceeded();
-    }
-
     public void setOnFailureListener(OnFailureListener onFailureListener) {
         mOnFailureListener = onFailureListener;
-    }
-
-    public interface OnFailureListener {
-        void onFailed();
-        void onFailureAnimStart();
     }
 }
